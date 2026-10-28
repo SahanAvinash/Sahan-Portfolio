@@ -1,0 +1,126 @@
+
+.education-section {
+  position: relative;
+  padding: 100px 8%;
+  color: #f8fafc;
+  background: transparent;
+}
+
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-intro {
+  max-width: 600px;
+  color: #aab6ca;
+  line-height: 1.8;
+  margin-bottom: 45px;
+}
+
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 30px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.65);
+  box-shadow: 0 12px 35px rgba(59, 130, 246, 0.12);
+}
+
+.education-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 15px;
+  background: rgba(59, 130, 246, 0.12);
+  font-size: 1.7rem;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-year {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #60a5fa;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.education-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.education-details h4 {
+  margin: 0 0 14px;
+  color: #c4b5fd;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.education-details p {
+  margin: 0;
+  color: #aab6ca;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.education-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.education-tags span {
+  padding: 8px 12px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 20px;
+  background: rgba(59, 130, 246, 0.1);
+  color: #bfdbfe;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .education-section {
+    padding: 75px 6%;
+  }
+
+  .education-card {
+    gap: 16px;
+    padding: 22px;
+  }
+
+  .education-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+  }
+
+  .education-details h3 {
+    font-size: 1.1rem;
+  }
+}

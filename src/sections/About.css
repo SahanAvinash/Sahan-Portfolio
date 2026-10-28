@@ -1,0 +1,119 @@
+
+.about-section {
+  min-height: 80vh;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background:
+    radial-gradient(
+      ellipse at 15% 50%,
+      #312e8118 0%,
+      transparent 45%
+    ),
+    #030712;
+  color: #ffffff;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #818cf8;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin: 12px 0 35px;
+}
+
+.section-title span {
+  color: #60a5fa;
+  text-shadow: 0 0 25px #3b82f640;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto 18px;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.about-card {
+  padding: 28px 16px;
+  text-align: center;
+  border: 1px solid #6366f140;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #111827cc,
+    #1e1b4b55
+  );
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-6px);
+  border-color: #818cf8;
+}
+
+.about-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+  color: #93c5fd;
+}
+
+.about-card p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 650px) {
+  .about-section {
+    padding: 80px 6%;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-main {
+  position: relative;
+  isolation: isolate;
+  background: #030712;
+  min-height: 100vh;
+}
+
+.portfolio-main > canvas.star-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.portfolio-content {
+  position: relative;
+  z-index: 0;
+}
